@@ -23,12 +23,12 @@ I wanted something quick, simple, easy to understand, easy to edit, cheap to ins
 1. Compile the program.
 2. Dump `LoveShack.exe` in the same directory as `love.exe`.
 3. (Optional, instead of 2.) Manually edit the `LoveShack.exe.config` file to point it to your `love.exe` file.
-  * See [Setting The LÖVE Path](#Setting_The_LÖVE_Path) section below.
+    * See [Setting The LÖVE Path](#Setting_The_LÖVE_Path) section below.
 
 ### Further Steps
 
 1. Drag the folder containing your `main.lua`, `conf.lua` and all other relevant files onto `LoveShack.exe`.
-  * Note: this would be the folder that you'd ordinarily drag onto `love.exe` itself to run the code.
+    * Note: this would be the folder that you'd ordinarily drag onto `love.exe` itself to run the code.
 2. Be patient.
 3. Enjoy your spoils of war.
 
