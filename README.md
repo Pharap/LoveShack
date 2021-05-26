@@ -21,7 +21,8 @@ I wanted something quick, simple, easy to understand, easy to edit, cheap to ins
 ### First Use Steps
 
 1. Compile the program.
-2. Manually edit the `LoveShack.exe.config` file to point it to your `love.exe` file.
+2. 
+3. (Optional, instead of 2.) Manually edit the `LoveShack.exe.config` file to point it to your `love.exe` file.
   * See [Setting The LÖVE Path](#Setting_The_LÖVE_Path) section below.
 
 ### Further Steps
@@ -33,9 +34,11 @@ I wanted something quick, simple, easy to understand, easy to edit, cheap to ins
 
 ## Setting The LÖVE Path
 
-At the moment the cannonical way to set the `love.exe` path is to manually edit the `LoveShack.exe.config` file with a text editor.
+The cannonical way to let LoveShack find LÖVE is now to put the two together in the same directory and watch the magic happen.
 
-By default it will look something like this:
+For historical reasons, there's also an option to edit the `.exe.config` file, so the directions are provided here for completeness...
+
+One way to set the `love.exe` path is to manually edit the `LoveShack.exe.config` file with a text editor. By default it will look something like this:
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
@@ -61,9 +64,12 @@ That's the part you replace with `<value>~path to your love.exe file~</love>`, e
 
 After you've done that, you need never touch the file again providing your `love.exe` never moves.
 
+But honestly, it's so much easier to just stick `LoveShack.exe` next to `love.exe`.
+Unless you've renamed `love.exe`, you shouldn't need to do this.
+
 ## Future Features
 
-At some point I'll probably make it auto-detect the file if it's dropped in the same directory and the settings file isn't already set.
+<s>At some point I'll probably make it auto-detect the file if it's dropped in the same directory and the settings file isn't already set.</s> I couldn't let it lie, that feature has been added.
 
 That aside, I don't think I'm likely to add any other features to this.
 
