@@ -21,7 +21,7 @@ I wanted something quick, simple, easy to understand, easy to edit, cheap to ins
 ### First Use Steps
 
 1. Compile the program.
-2. 
+2. Dump `LoveShack.exe` in the same directory as `love.exe`.
 3. (Optional, instead of 2.) Manually edit the `LoveShack.exe.config` file to point it to your `love.exe` file.
   * See [Setting The LÖVE Path](#Setting_The_LÖVE_Path) section below.
 
