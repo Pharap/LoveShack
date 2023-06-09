@@ -6,7 +6,7 @@ using LoveShack.Properties;
 //
 // MIT License
 // 
-// Copyright (c) 2021 Pharap (@Pharap)
+// Copyright (c) 2023 Pharap (@Pharap)
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -63,6 +63,11 @@ namespace LoveShack
             // Combine the root, the name and a .love extension
             // to create the path of the zipped file.
             var lovePath = Path.Combine(targetRoot, targetName) + ".love";
+
+            // If a .love file already exists
+            if (File.Exists(lovePath))
+                // Delete it
+                File.Delete(lovePath);
 
             // Create the Zip (.love) file.
             ZipFile.CreateFromDirectory(directoryPath, lovePath);
